@@ -17,15 +17,15 @@ The eiPlatform enterprise integration solution is a complete Java framework that
 
 1. Install Docker
 
-- [Docker Install documentation](https://docs.docker.com/install/)
+	- [Docker Install documentation](https://docs.docker.com/install/)
 
 2. Clone the main branch of the repository
 
-```bash
-cd /opt
-git clone https://github.com/pilotfishtechnology/eiplatform_quick_start
-cd eiplatform_quick_start
-```
+	```bash
+	cd /opt
+	git clone https://github.com/pilotfishtechnology/eiplatform_quick_start
+	cd eiplatform_quick_start
+	```
 
 3. Log in to the [Pilotfish Customer Portal](https://customerportal.pilotfishtechnology.com/portal/login.html) and download your latest license file.
 
@@ -33,9 +33,9 @@ cd eiplatform_quick_start
 
 5. Bring up your stack by running
 
-```bash
-sh start.sh
-```
+	```bash
+	sh start.sh
+	```
 
 When your docker container is running, connect to it on port `8080` to access the eiplatform instance.
 Sometimes this can take a little bit because of the entropy of keys.
