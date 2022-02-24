@@ -7,3 +7,4 @@
 *.eipstat
 *EmulatorBasicMetrics.mv.db
 *EmulatorEIPWatchDB.mv.db
+logs
