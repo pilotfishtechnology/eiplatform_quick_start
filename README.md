@@ -27,9 +27,11 @@ git clone https://github.com/pilotfishtechnology/eiplatform_quick_start
 cd eiplatform_quick_start
 ```
 
-3. Copy in your license file (`pflicense.key`) with your latest routes (`eip-root`).
+3. Log in to the [Pilotfish Customer Portal](https://customerportal.pilotfishtechnology.com/portal/login.html) and download your latest license file.
 
-4. Bring up your stack by running
+4. Copy in your license file (`pflicense.key`) with your latest routes (`eip-root`).
+
+5. Bring up your stack by running
 
 ```bash
 sh start.sh
