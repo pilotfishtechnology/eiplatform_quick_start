@@ -35,7 +35,6 @@ cd eiplatform_quick_start
 sh start.sh
 ```
 
-
 When your docker container is running, connect to it on port `8080` to access the eiplatform instance.
 Sometimes this can take a little bit because of the entropy of keys.
 
