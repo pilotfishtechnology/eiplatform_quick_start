@@ -36,7 +36,12 @@ The eiPlatform enterprise integration solution is a complete Java framework that
 5. Bring up your stack by running
 
 	```bash
-	sh start.sh
+	docker run -it -d --rm --name eiplatform \
+	  -v $(pwd)/logs:/opt/pilotfish/logs \
+	  -v $(pwd)/pflicense.key:/opt/pilotfish/license/pflicense.key \
+	  -v $(pwd)/eip-root:/opt/pilotfish/eip-root \
+	  -p 8080:8080 \
+	  pilotfishtechnology/eiplatform
 	```
 
 When your docker container is running, connect to it on port `8080` to access the eiplatform instance.
