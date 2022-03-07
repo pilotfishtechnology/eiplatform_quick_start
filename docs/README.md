@@ -1,10 +1,11 @@
 # Start
 
 ```bash
-docker run -it -d --rm --name eiplatform \
+docker run -it -d --name eiplatform \
   -v $(pwd)/logs:/opt/pilotfish/logs \
-  -v $(pwd)/pflicense.key:/opt/pilotfish/license/pflicense.key \
+  -v $(pwd)/license:/opt/pilotfish/license \
   -v $(pwd)/eip-root:/opt/pilotfish/eip-root \
+  -v $(pwd)/config:/opt/pilotfish/config \
   -p 8080:8080 \
   pilotfishtechnology/eiplatform
 ```
@@ -25,11 +26,13 @@ docker logs -f eiplatform
 
 ```bash
 docker stop eiplatform
+docker rm eiplatform
 docker pull pilotfishtechnology/eiplatform
-docker run -it -d --rm --name eiplatform \
+docker run -it -d --name eiplatform \
   -v $(pwd)/logs:/opt/pilotfish/logs \
-  -v $(pwd)/pflicense.key:/opt/pilotfish/license/pflicense.key \
+  -v $(pwd)/license:/opt/pilotfish/license \
   -v $(pwd)/eip-root:/opt/pilotfish/eip-root \
+  -v $(pwd)/config:/opt/pilotfish/config \
   -p 8080:8080 \
   pilotfishtechnology/eiplatform
 ```

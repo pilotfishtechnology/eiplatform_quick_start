@@ -31,15 +31,16 @@ The eiPlatform enterprise integration solution is a complete Java framework that
 
 3. Log in to the [Customer Portal](https://customerportal.pilotfishtechnology.com/portal/login.html) and download your latest license file.
 
-4. Copy in your license file (`pflicense.key`) with your latest routes (`eip-root`).
+4. Copy in your license file (`/license/pflicense.key`) with your latest routes (`eip-root`).
 
 5. Bring up your stack by running
 
 	```bash
-	docker run -it -d --rm --name eiplatform \
+	docker run -it -d --name eiplatform \
 	  -v $(pwd)/logs:/opt/pilotfish/logs \
-	  -v $(pwd)/pflicense.key:/opt/pilotfish/license/pflicense.key \
+	  -v $(pwd)/license:/opt/pilotfish/license \
 	  -v $(pwd)/eip-root:/opt/pilotfish/eip-root \
+	  -v $(pwd)/config:/opt/pilotfish/config \
 	  -p 8080:8080 \
 	  pilotfishtechnology/eiplatform
 	```
